@@ -1,0 +1,188 @@
+h1 {
+    font-size: 2em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+}
+
+.hero {
+    background: url('teh-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+
+
+.hero h1 {
+    font-size: 50px; /* Ukuran font 20px */
+}
+
+.highlight {
+    color: yellow; /* Warna kuning untuk teks */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+}
+
+.hamburger {
+    display: flex;
+}
+
+.nav-active {
+    display: flex;
+}
+}
+
+.kritik-saran-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+    
+.kritik-saran-section h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+    
+.kritik-saran-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    
+.kritik-saran-form {
+    display: flex;
+    flex-direction: column;
+}
+    
+.form-group {
+    margin-bottom: 15px;
+}
+    
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+    
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+    
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+    
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+    
+button:hover {
+    background-color: #45a049;
+}
+
+.produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.produk-item {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px); /* 4 kotak dalam satu baris dengan margin */
+    transition: transform 0.3s;
+}
+
+.produk-item h2 {
+    color: #4CAF50;
+}
+
+.produk-item p {
+    color: #555;
+}
+
+.produk-item:hover {
+    transform: translateY(-5px);
+}
+
+.produk-item img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px;
+}
